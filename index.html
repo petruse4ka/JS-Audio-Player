@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JS Audio Player by Konstantin Petrov">
+    <meta name="keywords" content="audio player, javascript audio player, HTML5 audio, JS music player, audio controls, custom audio player, web audio, play pause button, audio progress bar, volume control, audio playlist, responsive audio player, audio playback, media player UI">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicons/favicon-16x16.png">
+    <title>JS Audio Player by Konstantin Petrov</title>
+  </head>
+<body class="body">
+    <main class="main">
+      <section class="audio-player">
+        <h1 class="page__title">JS Audio Player by Konstantin Petrov</h1>
+        <img class="background-image" src="#" alt="">
+        <div class="audio-player__container">
+          <div class="audio-player__top">
+            <img class="album-cover" src="#" alt="">
+          </div>
+          <div class="audio-player__bottom">
+            <div class="song-timeline__container">
+              <button class="play-pause play"></button>
+              <div class="song-timeline">
+                <span class="current-time"></span> 
+                <div class="timeline-container">
+                  <span class="timeline"></span>
+                  <span class="time-selector"></span>
+                </div>
+                <span class="total-time"></span>
+              </div>
+              <input class="volume__checkbox" type="checkbox" name="volume" id="volume1">
+              <label for="volume1" class="volume"></label>
+            </div>
+            <div class="audio-player__song-information">
+              <div class="song-information__container">
+                <h2 class="artist-name">Artist</h2>
+                <h3 class="song-name">Name</h3>
+              </div>
+              <div class="navigation__buttons">
+                <button class="next"></button>
+                <button class="previous"></button>
+              </div>
+            </div>
+            <div class="playlist">
+              <div class="playlist-name__container">
+                <div class="playlist-name__container_wrapper">
+                  <h2 class="playlist-name">Playlist</h2>
+                  <div class="playlist-arrow"></div>
+                </div>
+                <div class="playlist-control__container">
+                  <input class="repeat__checkbox" type="checkbox" name="repeat" id="repeat1">
+                  <label for="repeat1" class="repeat"></label>
+                  <button class="shuffle"></button>
+                </div> 
+              </div>
+              <ul class="playlist__list">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="copyright">
+          <p>Copyright © 2024 <a href="https://github.com/petruse4ka" target="_blank" class="copyright__link">petruse4ka</a></p>
+        </div>
+        <div class="logo">
+          <a href="https://rs.school/courses/javascript-preschool-ru" target="_blank"><img src="assets/svg/rs-school-logo.svg" alt="Rolling-scopes school logo" width="50" height="50"></a>
+        </div>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
